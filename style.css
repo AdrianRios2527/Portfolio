@@ -1,0 +1,115 @@
+/*General Changes*/
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer !important;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(132, 255, 0);
+    cursor: pointer;
+    border-bottom: 0.5px solid white;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+
+/*Selective Changes*/
+
+.header {
+    font-size: large;
+    color: white;
+}
+
+.name {
+    animation: changeColor 15s infinite;
+}
+
+#name {
+    font-size: 90px;
+}
+
+@keyframes changeColor {
+    0% {
+        color: rgb(132, 255, 0);
+    }
+
+    25% {
+        color: rgb(6, 152, 50);
+    }
+
+    50% {
+        color: rgb(0, 161, 132);
+    }
+
+    75% {
+        color: rgb(70, 70, 232);
+    }
+
+    100% {
+        color: rgb(238, 0, 255);
+    }
+}
+
+#presentacion {
+    font-size: 24px;
+}
+
+#AboutMeTittle {
+    font-size: 37px;
+}
+
+#AboutMeP {
+    font-size: 20px;
+}
+
+.LinksToContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+i {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.breakes {
+    padding-top: 150px;
+}
+
+#btn1 {
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: yellow;
+    border: 2px solid;
+    background: linear-gradient(to left, transparent 50%, yellow 50%) no-repeat right/200%;
+    transition: background-position 0.3s ease;
+}
+
+#btn1:hover {
+    background-position: left;
+    color: black;
+}
+#particles-js{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.corazon{
+    background: linear-gradient(rgb(0, 115, 255),rgb(0, 255, 208));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
