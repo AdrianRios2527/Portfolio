@@ -119,3 +119,22 @@ i {
     -webkit-background-clip: text;
 }
 
+.borderAnimate{
+    position: relative;
+    &:before{
+        content: " ";
+        display: block;
+        width: 0px;
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        left: 15;
+        bottom: 0;
+        transition: all 1.5s;
+    }
+    &:hover::before{
+        width: 50%;
+
+    }
+}
+
