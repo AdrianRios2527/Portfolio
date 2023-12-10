@@ -1,16 +1,21 @@
 /*General Changes*/
 a {
     text-decoration: none !important;
-    color: inherit !important;
+    color: white !important;
     cursor: pointer !important;
+    border: none !important;
 
 }
 
 a:hover {
-    text-decoration: none;
-    color: rgb(132, 255, 0);
-    cursor: pointer;
-    border-bottom: 0.5px solid white;
+    text-decoration: none !important;
+    color: grey !important;
+    cursor: pointer !important;
+    border: none !important;
+    scale: 2;
+    font-weight: bolder;
+
+
 }
 
 .centrar {
@@ -113,3 +118,4 @@ i {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
