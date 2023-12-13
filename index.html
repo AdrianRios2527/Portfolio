@@ -22,7 +22,7 @@
     <div id="contenido">
         <!--Portada -->
         <div class="Portada ">
-            <div class="header d-flex p-3 col-12  fixed-top">
+            <div class="header d-flex p-3 col-12 bg-black  fixed-top">
                 <a href="#AboutMe" class="centrar col-4 ">About Me</a>
                 <a href="#Projects" class="centrar col-4">Projects</a>
                 <a href="#ContactMe" class="centrar col-4">Contact Me</a>
@@ -47,7 +47,7 @@
         <div class="breakes"></div>
         <!--About me-->
 
-        <div id="AboutMe" class="AboutMe p-5">
+        <div id="AboutMe" class="AboutMe p-5 elemento-animado">
             <h5 id="AboutMeTittle" class="centrar col-12 p-5 borderAnimate">Who I am??</h5>
             <div class="centrar">
                 <p id="AboutMeP" class="col-12  w-75">
@@ -68,8 +68,8 @@
         <!--Skills-->
 
         <!--Project-1-->
-        <div id="Projects" class="projects p-5">
-            <div class="InfoDelSlider p-5">
+        <div id="Projects" class="projects p-5 ">
+            <div class="InfoDelSlider p-5 elemento-animado">
                 <div id="carouselExampleControls" class="carousel slide col-12 " data-bs-ride="carousel">
                     <div class="carousel-inner col-12 ">
                         <h2 class="centrar pb-5 borderAnimate">
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <!--Project-2-->
-            <div class="InfoDelSlider p-5">
+            <div class="InfoDelSlider p-5 elemento-animado">
                 <div id="carouselExampleControls" class="carousel slide col-12 " data-bs-ride="carousel">
                     <h2 class="centrar pb-5 borderAnimate">
                         Stop-Game
@@ -132,7 +132,7 @@
 
         <!--Skilss-->
 
-        <div class="skils d-flex p-5">
+        <div class="skils d-flex p-5 elemento-animado">
             <div class="col-6 p-5">
                 <h4 class="col-12 centrar">HTML</h4>
                 <h4 class="col-12 centrar mb-5"><i class="fa-brands fa-html5" style="color: #c6c7c7;"></i></h4>
@@ -146,7 +146,7 @@
                 <h4 class="col-12 centrar"><i class="fa-brands fa-python" style="color: #c6c7c7;"></i></h4>
             </div>
         </div>
-        <div class="skils d-flex col-12">
+        <div class="skils d-flex col-12 elemento-animado">
             <div class="col-12  d-flex flex-row ">
                 <h4 class="col-4 centrar">SQL</h4>
                 <h4 class="col-4 centrar">Jest</h4>
@@ -154,7 +154,7 @@
 
             </div>
         </div>
-        <div class="skils d-flex col-12">
+        <div class="skils d-flex col-12 elemento-animado">
             <div class="col-12  d-flex flex-row ">
                 <h4 class="col-4 centrar"><i class="fa-sharp fa-solid fa-database" style="color: #c6c7c7;"></i></h4>
                 <h4 class="col-4 centrar mt-3">JavaScript </h4>
@@ -165,16 +165,17 @@
         <!--DIVS BREAKS-->
         <div class="breakes"></div>
         <!--DIVS BREAKS-->
-        <div id="ContactMe" class="centrar">
+        <div id="ContactMe" class="centrar elemento-animado">
             <button id="btn1" class="btn btn-primary w-25">Contact Me</button>
         </div>
         <div id="ContactMe" class="ContactMe col-12  p-5 d-flex flex-column">
-            <div class="infocontact  col-12 p-5  centrar">
-                <p class=" " id="AboutMeP">
-                    If you will like to contact me i leave you my social media and you cand send me throw them a
+            <div class="infocontact  col-12 p-5  ">
+                <p class="text-center" id="AboutMeP">
+                    If you will like to contact me I leave you my social media and you cand send me throw them a
                     message.
-                    <br>
-                    We can make special things!
+                </p>
+                <p class="text-center" id="AboutMeP">
+                    We can start to make amazing things!
                 </p>
             </div>
             <div class="LinksToContact col-12  p-5 text-center d-flex flex-row">
@@ -192,6 +193,7 @@
         <span>Made with <i class="corazon fa-solid fa-heart"></i> by Adrián</span>
     </footer>
     <div id="particles-js"></div>
+    <script src="app.js"></script>
     <script src="particles.min.js"></script>
     <script> particlesJS(
             {
@@ -308,3 +310,4 @@
 </body>
 
 </html>
+
