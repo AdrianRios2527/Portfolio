@@ -94,7 +94,7 @@ i {
     padding: 10px;
     border: none;
     cursor: pointer;
-    color: yellow;
+    color: grey;
     border: 2px solid;
     background: linear-gradient(to left, transparent 50%, yellow 50%) no-repeat right/200%;
     transition: background-position 0.3s ease;
@@ -102,7 +102,7 @@ i {
 
 #btn1:hover {
     background-position: left;
-    color: black;
+    color: rgb(0, 0, 0) ;
 }
 #particles-js{
     background-color: black;
