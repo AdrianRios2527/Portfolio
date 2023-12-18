@@ -5,7 +5,7 @@ document.addEventListener("scroll", function() {
       if (esElementoVisible(elemento)) {
         setTimeout(function() {
           elemento.classList.add("aparecer");
-        }, index * 400); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
+        }, index * 300); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
       }
     });
   });
