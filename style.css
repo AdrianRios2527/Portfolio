@@ -37,26 +37,29 @@ a:hover {
     font-size: 90px;
 }
 
-@keyframes changeColor {
+@keyframes shine {
     0% {
-        color: rgb(132, 255, 0);
-    }
-
-    25% {
-        color: rgb(6, 152, 50);
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffcc00, 0 0 25px #ffcc00, 0 0 30px #ffcc00, 0 0 35px #ffcc00;
     }
 
     50% {
-        color: rgb(0, 161, 132);
-    }
-
-    75% {
-        color: rgb(70, 70, 232);
+        text-shadow: 0 5 0px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffcc00, 0 0 25px #ffcc00, 0 0 30px #ffcc00, 0 0 35px #ffcc00;
     }
 
     100% {
-        color: rgb(238, 0, 255);
+        text-shadow: 5 0 10px #fff, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00, 0 0 50px #ffcc00, 0 0 60px #ffcc00, 0 0 70px #ffcc00;
     }
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    display: inline-block;
+    animation: shine 8s linear infinite ;
 }
 
 #presentacion {
@@ -88,7 +91,7 @@ i {
 
 #btn1 {
     text-transform: uppercase;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     padding: 10px;
     border: none;
@@ -101,9 +104,10 @@ i {
 
 #btn1:hover {
     background-position: left;
-    color: rgb(0, 0, 0) ;
+    color: rgb(0, 0, 0);
 }
-#particles-js{
+
+#particles-js {
     background-color: black;
     position: fixed;
     width: 100%;
@@ -112,15 +116,16 @@ i {
     z-index: -1;
 }
 
-.corazon{
-    background: linear-gradient(rgb(0, 115, 255),rgb(0, 255, 208));
+.corazon {
+    background: linear-gradient(rgb(0, 115, 255), rgb(0, 255, 208));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
-.borderAnimate{
+.borderAnimate {
     position: relative;
-    &:before{
+
+    &:before {
         content: " ";
         display: block;
         width: 0px;
@@ -131,7 +136,8 @@ i {
         bottom: 0;
         transition: all 1.5s;
     }
-    &:hover::before{
+
+    &:hover::before {
         width: 50%;
 
     }
@@ -141,12 +147,13 @@ i {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
-  }
+}
 
-  .elemento-animado.aparecer {
+.elemento-animado.aparecer {
     opacity: 1;
     transform: translateY(0);
-  }
-   .sdd{
+}
+
+.sdd {
     background-color: black;
-   }
+}
